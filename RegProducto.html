@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Document</title>
+</head>
+<body style="background-color: #F8FCFD;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php"> Inicio</a></li>
+                <li><a href="Producto.html"> Producto</a></li>
+                <li><a href="RegProducto.html"> Reg. Producto</a></li>
+                <li><a href="Registro.html"> Registro</a></li>
+                <li><a href="Login.html"> Log in</a></li>
+                <li><a href="Salir.html"> Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <p class="kali">KALISTA</p>
+
+    <div class="registro">
+        <a href="Mostrar_bitacora.php" >
+            <button type="submit" class="button">Bitacora</button>
+        </a>
+
+        <form action="http://localhost/Conexion/bus_producto.php" method="POST">
+            <div>
+                <h3>MODIFICAR PRODUCTOS</h3>
+                <label for="descripcion">Descripción: </label>
+                <input type="text" id="descripcion" name="descripcion" class="inputDescripcion">
+                <label for="precio">Precio: </label>
+                <input type="text" id="precio" name="precio">
+                <label for="cantidad">Cantidad: </label>
+                <input type="text" id="cantidad" name="cantidad">
+                <label for="imagen">URL de la imagen: </label>
+                <input type="text" id="imagen" name="imagen">
+                <!-- <label for="imagen">Imagen: </label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required> -->
+            </div>
+            <div>
+               <button type="submit" class="button">Buscar</button>
+               <!-- <a href="http://localhost/Conexion/mo_producto.php"><button type="submit" class="button">Modificar</button></a>               -->
+                 <!-- <a href="Producto.html" class="textButton">Log in</a> -->
+            </div>
+        </form>
+        <form action="http://localhost/Conexion/reg_producto.php" method="POST">
+            <div>
+                <h3>REGISTRO PRODUCTOS</h3>
+                <label for="descripcion">Descripción: </label>
+                <input type="text" id="descripcion" name="descripcion" class="inputDescripcion">
+                <label for="precio">Precio: </label>
+                <input type="text" id="precio" name="precio">
+                <label for="cantidad">Cantidad: </label>
+                <input type="text" id="cantidad" name="cantidad">
+                <label for="imagen">URL de la imagen: </label>
+                <input type="text" id="imagen" name="imagen">
+                <!-- <label for="imagen">Imagen: </label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required> -->
+            </div>
+            <div>
+               <button type="submit" class="button">Registrar</button>
+                 <!-- <a href="Producto.html" class="textButton">Log in</a> -->
+            </div>
+        </form>
+        <form action="http://localhost/Conexion/reg_producto.php" method="POST">
+            <div>
+                <h3>ELIMINAR PRODUCTOS</h3>
+                <label for="descripcion">Descripción: </label>
+                <input type="text" id="descripcion" name="descripcion" class="inputDescripcion">
+                <label for="precio">Precio: </label>
+                <input type="text" id="precio" name="precio">
+                <label for="cantidad">Cantidad: </label>
+                <input type="text" id="cantidad" name="cantidad">
+                <label for="imagen">URL de la imagen: </label>
+                <input type="text" id="imagen" name="imagen">
+                <!-- <label for="imagen">Imagen: </label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required> -->
+            </div>
+            <div>
+               <button type="submit" class="button">Buscar</button>
+               <button type="submit" class="button">Eliminar</button>              
+                 <!-- <a href="Producto.html" class="textButton">Log in</a> -->
+            </div>
+        </form>
+        
+
+    </div>
+</body>
+</html>
